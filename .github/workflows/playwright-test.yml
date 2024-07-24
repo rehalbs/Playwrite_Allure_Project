@@ -25,7 +25,7 @@ jobs:
           path: gh-pages
 
       - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@v1.0.0
+        uses: simple-elf/allure-report-action
         id: allure-report
         with:
           allure_results: allure-results
