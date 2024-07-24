@@ -25,10 +25,11 @@ test('should be able to delete a todo', async ({ page, request, context }) => {
 	await newTodoPage.load(page);
 	await newTodoPage.addTodo(page, 'Learn Playwright_New Page');
 	//await newTodoPage.addTodoUsingApi(request, user);
-
 	const todoPage = new TodoPage();
 	await todoPage.load(page);
 	await todoPage.deleteTodo(page);
+	await newTodoPage.load(page);
+	await newTodoPage.addTodo(page, 'Learn Playwright_added after delete');
 	const noTodosMessage = await todoPage.getNoTodosMessage(page);
 	await expect(noTodosMessage).toBeVisible();
 });
