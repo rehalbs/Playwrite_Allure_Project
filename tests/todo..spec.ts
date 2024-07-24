@@ -4,7 +4,7 @@ import SignupPage from '../pages/SignupPage';
 import TodoPage from '../pages/TodoPage';
 import NewTodoPage from '../pages/NewTodoPage';
 
-test('should be able to add a new todo', async ({ page, request, context }) => {
+test('should be able to add a new todo Test', async ({ page, request, context }) => {
 	const user = new User();
 	const signupPage = new SignupPage();
 	await signupPage.signupUsingAPI(request, user, context);
