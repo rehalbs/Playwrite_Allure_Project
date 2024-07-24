@@ -23,7 +23,7 @@ test('should be able to delete a todo', async ({ page, request, context }) => {
 
 	const newTodoPage = new NewTodoPage();
 	await newTodoPage.load(page);
-	await newTodoPage.addTodo(page, 'Learn Playwright_add!');
+	await newTodoPage.addTodo(page, 'Learn Playwright_New');
 	//await newTodoPage.addTodoUsingApi(request, user);
 
 	const todoPage = new TodoPage();
