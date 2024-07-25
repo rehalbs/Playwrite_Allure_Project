@@ -3,6 +3,7 @@ import User from '../models/User';
 import SignupPage from '../pages/SignupPage';
 import TodoPage from '../pages/TodoPage';
 
+
 test('should be able to register to our application', async ({ page }) => {
 	const user = new User();
 	const signupPage = new SignupPage();
